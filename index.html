@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawCare | Login</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center py-5">
+        <div class="row auth-container-wrapper g-0">
+            <div class="col-lg-6 auth-left-panel p-5">
+                <div class="mb-auto">
+                    <h2 class="fw-bold mb-0 text-white">
+                        <i class="bi bi-paw-fill"></i> PawPulse
+                    </h2>
+                </div>
+                <div>
+                    <h3 class="fw-bold text-white mb-2">Every pet deserves a loving home.</h3>
+                    <p class="text-white-50 small mb-0">
+                        Internal operations portal for shelter staff and administrators to manage animals, records and daily shelter workflows.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 auth-right-panel p-5 d-flex flex-column justify-content-center">
+
+                <div class="text-center mb-4">
+                    <i class="bi bi-heart-fill fs-2 text-dark"></i>
+                    <h3 class="fw-bold mt-2">
+                        Shelter Portal
+                    </h3>
+                    <p class="text-muted small">
+                        Sign in to access admin & staff dashboard
+                    </p>
+                </div>
+
+                <div id="loginPanel">
+
+                    <form id="loginForm">
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-muted">
+                                Email Address
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0"><i class="bi bi-envelope text-muted"></i></span>
+                                <input type="email"
+                                    class="form-control border-start-0 ps-0"
+                                    id="loginEmail"
+                                    placeholder="Enter your email"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small fw-bold text-muted">
+                                Password
+                            </label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-white border-end-0"><i class="bi bi-lock text-muted"></i></span>
+                                <input type="password"
+                                    class="form-control border-start-0 ps-0"
+                                    id="loginPassword"
+                                    placeholder="Enter your password"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div id="loginMessage"
+                            class="form-message mb-3 small text-danger text-center">
+                        </div>
+
+                        <button type="submit"
+                            class="btn w-100 py-2 fw-bold shadow-sm text-white"
+                            style="background-color: #343a40; border-color: #343a40;">
+                            Login
+                            <i class="bi bi-arrow-right ms-1"></i>
+                        </button>
+                    </form>
+
+                    <div class="demo-credentials mt-4 pt-3 border-top text-center">
+                        <span class="small text-muted d-block mb-1">
+                            <strong>Login:</strong>
+                        </span>
+                        <span class="small text-muted d-block">
+                            Admin: <span class="text-danger">admin@pawpulse.com</span> / <span class="text-dark">admin123</span>
+                        </span>
+                        <span class="small text-muted d-block">
+                            Staff: <span class="text-danger">staff@pawpulse.com</span> / <span class="text-dark">staff123</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>
